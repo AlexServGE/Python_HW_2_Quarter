@@ -6,7 +6,7 @@ def random_generated_coins(N):
 
 
 def count_coins_to_turn(coins):
-    return coins.count(1)
+    return coins.count(1) if len(coins) / 2 >= coins.count(1) else coins.count(0)
 
 
 coins_1 = random_generated_coins(10)
