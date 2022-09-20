@@ -8,11 +8,11 @@
 import math
 
 
-def some_name(some_list):
+def mul_digits_pairs(some_list):
     return [some_list[i] * some_list[-i - 1] for i in range(math.ceil(len(some_list) / 2))]
 
 
 task_list_1 = [2, 3, 4, 5, 6]
-print(some_name(task_list_1))
+print(mul_digits_pairs(task_list_1))
 task_list_2 = [2, 3, 5, 6]
-print(some_name(task_list_2))
+print(mul_digits_pairs(task_list_2))
