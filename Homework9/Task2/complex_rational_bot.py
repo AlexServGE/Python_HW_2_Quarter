@@ -2,7 +2,6 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import commands
 from messages import Messages
-from math_rational_nums import Rationalfigure
 
 with open('Token.txt', 'r', encoding='utf-8') as file:
     token = file.read()

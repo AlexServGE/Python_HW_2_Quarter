@@ -2,6 +2,7 @@ from math_complex_nums import Complexfigure
 from math_rational_nums import Rationalfigure
 from user_inputs_parser import Parser
 from decimal import Decimal
+import my_logging
 
 
 class Messages:
@@ -12,6 +13,7 @@ class Messages:
 
     def user_message(self, update, context):
         text = update.message.text
+        my_logging.logging(update, context)
         if self.complex_messages.trigger is False and self.rational_messages.trigger is False:
             self.welcome_first_figure(update, context, text)
         elif self.complex_messages.trigger is True:
